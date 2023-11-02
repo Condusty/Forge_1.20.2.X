@@ -1,9 +1,11 @@
 {
   "item.examplemod.sapphire": "Sapphire",
   "item.examplemod.raw_sapphire": "Raw Sapphire",
+  "item.examplemod.ring_double_jump": "Ring of Jumping",
 
   "block.examplemod.sapphire_block": "Block of Sapphire",
   "block.examplemod.raw_sapphire_block": "Block of raw Sapphire",
+  "block.examplemod.cock_block": "Block of Cock",
 
   "creativetab.example_tab": "Sapphire Example Tab"
 }
