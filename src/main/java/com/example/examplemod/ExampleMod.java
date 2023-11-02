@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.block.ModBlocks;
 import com.example.item.ModCreativeModTabs;
 import com.example.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -46,6 +47,7 @@ public class ExampleMod
 
         ModItems.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

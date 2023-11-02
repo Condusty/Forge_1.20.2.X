@@ -1,5 +1,6 @@
 package com.example.item;
 
+import com.example.block.ModBlocks;
 import com.example.examplemod.ExampleMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,6 +24,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(Items.DIAMOND);
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                     })
                     .build());
 
