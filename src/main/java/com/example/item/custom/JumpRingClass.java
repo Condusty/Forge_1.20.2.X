@@ -23,11 +23,8 @@ public class JumpRingClass extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        pPlayer.setSpeed(pPlayer.getSpeed() + 200);
         pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2000000000, 5));
         pPlayer.giveExperienceLevels(20);
-        //pPlayer.kill();
-
         return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));
     }
 
