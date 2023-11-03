@@ -6,6 +6,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -20,9 +23,12 @@ public class JumpRingClass extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+        pPlayer.setSpeed(pPlayer.getSpeed() + 200);
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2000000000, 5));
         pPlayer.giveExperienceLevels(20);
-        pPlayer.kill();
+        //pPlayer.kill();
 
         return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));
     }
+
 }
