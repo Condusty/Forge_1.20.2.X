@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " W ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item":"examplemod:sapphire"
+    },
+    "W": {
+      "item": "examplemod:ring_double_jump"
+    }
+  },
+  "result": {
+    "item": "examplemod:cock_block"
+  }
+}
